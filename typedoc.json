@@ -1,0 +1,10 @@
+{
+  "name": "jeremiah_tenbrink/queue",
+  "mode": "file",
+  "out": "docs",
+  "includeDeclarations": true,
+  "excludeNotExported": false,
+  "includes": "./src/",
+  "excludeExternals": true,
+  "readme": "none"
+}
