@@ -35,7 +35,7 @@ npm install @jeremiah_tenbrink/queue
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jeremiahtenbrink/queue/issues). You can also take a look at the [contributing guide](https://github.com/jeremiahtenbrink/queue/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/jeremiahtenbrink/queue/issues).
 
 ## Show your support
 

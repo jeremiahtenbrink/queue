@@ -1,6 +1,6 @@
 {
   "name": "@jeremiah_tenbrink/queue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "author": "Jeremiah Tenbrink",
   "description": "Queue using a doubly linked list.",
