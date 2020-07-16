@@ -22,7 +22,7 @@ Queue using a doubly linked list.
 ## Install
 
 ```sh
-npm install
+npm install @jeremiah_tenbrink/queue
 ```
 
 ## Author
