@@ -19,7 +19,7 @@
     "docs": "typedoc",
     "publish-repo": "npm publish --access public"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@jeremiah_tenbrink/doubly-linked-list": "^1.0.0"
   },
