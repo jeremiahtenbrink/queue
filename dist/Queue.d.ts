@@ -4,26 +4,25 @@
  */
 export declare class Queue {
     private dll;
-    private length;
     constructor();
     /**
-     * get length of the queue.
-     * @return {number} length
+     * @type {function} getSize  get length of the queue.
+     * @return {number} size
      */
-    getLength(): number;
+    getSize(): number;
     /**
-     * returns if the queue is empty or not
+     * @type {function} isEmpty  returns if the queue is empty or not
      * @return {boolean} empty
      */
     isEmpty(): boolean;
     /**
-     * Adds the item to the queue.
-     * @param item
+     * @type {function} enqueue  Adds the item to the queue.
+     * @param {any} item
      */
     enqueue(item: any): void;
     /**
      * Returns the first item in the queue.
-     * @return {(any | undefined)} item
+     * @return {any | null} item
      */
     dequeue(): undefined | any;
 }

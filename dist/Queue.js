@@ -9,41 +9,34 @@ var doubly_linked_list_1 = require("@jeremiah_tenbrink/doubly-linked-list");
 var Queue = /** @class */ (function () {
     function Queue() {
         this.dll = new doubly_linked_list_1.DoublyLinkedList();
-        this.length = 0;
     }
     /**
-     * get length of the queue.
-     * @return {number} length
+     * @type {function} getSize  get length of the queue.
+     * @return {number} size
      */
-    Queue.prototype.getLength = function () {
-        return (this.length);
+    Queue.prototype.getSize = function () {
+        return this.dll.getSize();
     };
     /**
-     * returns if the queue is empty or not
+     * @type {function} isEmpty  returns if the queue is empty or not
      * @return {boolean} empty
      */
     Queue.prototype.isEmpty = function () {
-        return (this.length == 0);
+        return (this.dll.getSize() == 0);
     };
     /**
-     * Adds the item to the queue.
-     * @param item
+     * @type {function} enqueue  Adds the item to the queue.
+     * @param {any} item
      */
     Queue.prototype.enqueue = function (item) {
         this.dll.addToTail(item);
-        this.length += 1;
     };
     /**
      * Returns the first item in the queue.
-     * @return {(any | undefined)} item
+     * @return {any | null} item
      */
     Queue.prototype.dequeue = function () {
-        if (this.length === 0) {
-            return undefined;
-        }
-        var value = this.dll.removeFromHead();
-        this.length -= 1;
-        return value;
+        return this.dll.removeFromHead();
     };
     return Queue;
 }());
