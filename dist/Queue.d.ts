@@ -2,7 +2,7 @@
  * Queue implementation using a doubly linked list.
  *
  */
-export declare class Queue extends Object {
+export declare class Queue {
     private dll;
     private length;
     constructor();

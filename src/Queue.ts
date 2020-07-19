@@ -4,54 +4,43 @@ import { DoublyLinkedList } from "@jeremiah_tenbrink/doubly-linked-list";
  * Queue implementation using a doubly linked list.
  *
  */
-export class Queue extends Object {
+export class Queue {
   private dll = new DoublyLinkedList();
-  private length = 0;
   
   constructor() {
-    super();
+  
   }
   
   /**
-   * get length of the queue.
-   * @return {number} length
+   * @type {function} getSize  get length of the queue.
+   * @return {number} size
    */
-  getLength(): number {
-    return ( this.length );
+  getSize(): number {
+    return this.dll.getSize()
   }
   
   /**
-   * returns if the queue is empty or not
+   * @type {function} isEmpty  returns if the queue is empty or not
    * @return {boolean} empty
    */
   isEmpty(): boolean {
-    return ( this.length == 0 );
+    return ( this.dll.getSize() == 0 );
   }
   
   /**
-   * Adds the item to the queue.
-   * @param item
+   * @type {function} enqueue  Adds the item to the queue.
+   * @param {any} item
    */
   enqueue( item: any ): void {
     this.dll.addToTail( item );
-    this.length += 1;
   }
   
   /**
    * Returns the first item in the queue.
-   * @return {(any | undefined)} item
+   * @return {any | null} item
    */
   dequeue(): undefined | any {
-    
-    if ( this.length === 0 ) {
-      return undefined;
-    }
-    const value = this.dll.removeFromHead();
-    
-    this.length -= 1;
-    
-    return value;
-    
+    return this.dll.removeFromHead();
   }
   
 }
