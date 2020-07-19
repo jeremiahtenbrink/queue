@@ -21,11 +21,37 @@
 
 Queue using a doubly linked list.
 
+<a href="https://github.com/jeremiahtenbrink/doubly-linked-list">
+@jeremiah_tenbrink/doubly-linked-list
+</a>
+
 ## Install
 
-```sh
+### With Npm
+```shell script
 npm install @jeremiah_tenbrink/queue
 ```
+
+### With yarn
+```shell script
+yarn add @jeremiah_tenbrink/queue
+```
+
+## Usage
+
+```javascript
+import {Queue} from "@jeremiah_tenbrink/queue";
+
+const q = new Queue();
+q.enqueue('some value')
+q.enqueue('another value')
+
+while (!q.isEmpty()){
+  const current = q.dequeue();
+  console.log(current)
+}
+```
+
 
 ## Author
 
