@@ -12,7 +12,9 @@
   <a href="https://github.com/jeremiahtenbrink/queue/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/jeremiahtenbrink/queue" />
   </a>
+<a href="https://codeclimate.com/github/jeremiahtenbrink/queue/maintainability"><img src="https://api.codeclimate.com/v1/badges/1a5cf55dfc93cec35431/maintainability" /></a>
 
+<a href="https://codeclimate.com/github/jeremiahtenbrink/queue/test_coverage"><img src="https://api.codeclimate.com/v1/badges/1a5cf55dfc93cec35431/test_coverage" /></a>
 
 </p>
 
